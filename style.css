@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* Fonte estilo máquina de escrever/arquivo */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap'); /* Fonte estilo Anime */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Nova fonte para código/tags */
+
+:root {
+    --gojo-blue: #00ffff;
+    --gojo-purple: #bd00ff;
+    --sukuna-red: #ff003c;
+    --text-color: #f0f0f0;
+    --bg-dark: #050505;
+    --card-bg: #121212;
+    --card-border: #333;
+    --cursed-energy-glow: 0 0 15px rgba(0, 255, 255, 0.5);
+    --sukuna-glow: 0 0 15px rgba(255, 0, 60, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-dark);
+    /* Adiciona uma textura de granulação estilo "filme antigo" ou "manga" */
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url("https://www.transparenttextures.com/patterns/stardust.png");
+    color: var(--text-color);
+    font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* --- HEADER --- */
+header {
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 3px solid var(--sukuna-red); /* Borda mais forte e temática */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 60px;
+    filter: invert(1) drop-shadow(0 0 8px var(--gojo-blue)); /* Brilho azul no logo */
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05) rotate(-2deg);
+    filter: invert(1) drop-shadow(0 0 15px var(--gojo-blue));
+}
+
+header h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem; /* Aumentado */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(45deg, var(--text-color), var(--gojo-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* --- BUSCA --- */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0; /* Mais quadrado */
+    border: 2px solid var(--card-border);
+    background: rgba(255, 255, 255, 0.03);
+    font-family: 'Roboto Mono', monospace; /* Fonte mais técnica */
+    font-size: 1.1rem;
+    color: white;
+    width: 25rem;
+    transition: 0.3s;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--gojo-blue);
+    box-shadow: 0 0 15px var(--gojo-blue), inset 0 0 10px rgba(0, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#botao-busca {
+    padding: 0.8rem 2rem;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--sukuna-red);
+    color: white;
+    letter-spacing: 1px;
+    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); /* Formato recortado mais agressivo */
+    transition: 0.3s;
+}
+
+#botao-busca:hover {
+    background: #ff1f5a;
+    box-shadow: 0 0 20px var(--sukuna-red);
+    transform: scale(1.05);
+}
+
+/* --- MAIN --- */
+main {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding-bottom: 4rem;
+    min-height: 80vh;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cards um pouco maiores */
+    gap: 2.5rem; /* Espaçamento maior */
+    padding: 0 1.5rem;
+}
+
+/* --- CARDS ESTILO JUJUTSU --- */
+article.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 0; /* Mais quadrado */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+/* Efeito de hover "Energia Amaldiçoada" */
+article.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--gojo-blue);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), inset 0 0 20px rgba(0,0,0,0.9);
+}
+
+article.card:hover h2 {
+    color: var(--gojo-blue);
+    text-shadow: 0 0 10px var(--gojo-blue);
+}
+
+.card-cover {
+    width: 100%;
+    height: 300px; /* Imagem maior */
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 5px solid var(--sukuna-red); /* Linha vermelha mais grossa */
+    filter: grayscale(40%) contrast(110%);
+    transition: 0.4s;
+}
+
+article.card:hover .card-cover {
+    filter: grayscale(0%) contrast(120%);
+}
+
+.card-content {
+    padding: 1.5rem;
+    position: relative;
+}
+
+/* Títulos dos Cards */
+article h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem; /* Título maior */
+    margin: 0 0 0.5rem 0;
+    line-height: 0.9;
+    text-transform: uppercase;
+    color: white;
+    transition: 0.3s;
+}
+
+article p {
+    font-size: 1rem;
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+article p strong {
+    color: var(--sukuna-red);
+    font-family: 'Roboto Mono', monospace; /* Fonte mais técnica */
+    font-weight: 700;
+}
+
+/* --- TAGS --- */
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--gojo-blue); /* Cor da tag */
+    border: 1px solid var(--gojo-blue);
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.tag:hover {
+    background: var(--gojo-blue);
+    color: var(--bg-dark);
+    cursor: default;
+}
+
+/* Link estilo botão */
+article a {
+    display: block;
+    margin-top: 1.5rem;
+    text-align: center;
+    background: transparent;
+    border: 2px solid var(--sukuna-red); /* Borda mais grossa e vermelha */
+    color: var(--sukuna-red);
+    padding: 0.7rem;
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+article a:hover {
+    background: var(--sukuna-red);
+    color: white;
+    box-shadow: 0 0 15px var(--sukuna-red);
+}
+
+/* --- LOADER (Orbe de Energia) --- */
+.loader-container {
+    display: none;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.loader {
+    width: 80px; /* Loader maior */
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--gojo-blue), transparent);
+    box-shadow: 0 0 25px var(--gojo-blue), 0 0 50px var(--gojo-purple);
+    animation: pulseCurse 1s infinite alternate;
+}
+
+@keyframes pulseCurse {
+    from { transform: scale(1); opacity: 0.8; }
+    to { transform: scale(1.2); opacity: 1; box-shadow: 0 0 40px var(--gojo-blue), 0 0 80px var(--gojo-purple); }
+}
+
+/* --- MENSAGEM DE ERRO --- */
+#msg-erro h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem !important;
+    color: #888 !important;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+/* --- FOOTER --- */
+.footer {
+    border-top: 1px solid #1a1a1a;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer p {
+    color: #555 !important;
+    font-size: 0.9rem !important;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    .search-box input {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .logo-container {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .search-box {
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .search-box input {
+        width: 100%;
+    }
+    
+    #botao-busca {
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    
+    .card-cover {
+        height: 250px;
+    }
+}

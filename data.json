@@ -1,0 +1,258 @@
+[
+  {
+    "nome": "Ryomen Sukuna",
+    "descricao": "O Rei das Maldições, entidade amaldiçoada poderosa que reside no corpo de Yuji.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Sukuna?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb99.png",
+    "tags": ["maldição", "antagonista", "Sukuna"]
+  },
+  {
+    "nome": "Yuji Itadori",
+    "descricao": "Protagonista que se torna hospedeiro de Ryomen Sukuna ao ingerir um dedo amaldiçoado.",
+    "data_criacao": "2018",
+    "link": "https://en.wikipedia.org/wiki/Yuji_Itadori",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb1.png",
+    "tags": ["estudante", "Tóquio", "protagonista"]
+  },
+  {
+    "nome": "Megumi Fushiguro",
+    "descricao": "Estudante da Escola Jujutsu que utiliza a técnica das sombras dos Dez Santuários.",
+    "data_criacao": "2018",
+    "link": "https://en.wikipedia.org/wiki/Megumi_Fushiguro",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb2.png",
+    "tags": ["estudante", "Tóquio", "técnica das sombras"]
+  },
+  {
+    "nome": "Nobara Kugisaki",
+    "descricao": "Estudante que luta com martelo, pregos e bonecos de palha usando energia amaldiçoada.",
+    "data_criacao": "2018",
+    "link": "https://en.wikipedia.org/wiki/Nobara_Kugisaki",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb3.png",
+    "tags": ["estudante", "Tóquio", "armas"]
+  },
+  {
+    "nome": "Maki Zen'in",
+    "descricao": "Membro do clã Zen'in com pouca energia amaldiçoada, mas grande habilidade física e com armas.",
+    "data_criacao": "2018",
+    "link": "https://en.wikipedia.org/wiki/Maki_Zen%27in",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb4.png",
+    "tags": ["clã Zen'in", "armas", "Tóquio"]
+  },
+  {
+    "nome": "Toge Inumaki",
+    "descricao": "Estudante que utiliza Fala Amaldiçoada, capaz de impor comandos através de palavras.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Toge_Inumaki",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb5.png",
+    "tags": ["Fala Amaldiçoada", "estudante", "Tóquio"]
+  },
+  {
+    "nome": "Panda",
+    "descricao": "Corpo amaldiçoado de grau especial criado por Yaga, com múltiplos núcleos.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Panda",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb6.png",
+    "tags": ["corpo amaldiçoado", "especial", "Tóquio"]
+  },
+  {
+    "nome": "Satoru Gojo",
+    "descricao": "Professor da Escola Jujutsu de Tóquio e considerado o feiticeiro mais forte.",
+    "data_criacao": "2018",
+    "link": "https://en.wikipedia.org/wiki/Satoru_Gojo",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb7.png",
+    "tags": ["feiticeiro", "professor", "Tóquio"]
+  },
+  {
+    "nome": "Atsuya Kusakabe",
+    "descricao": "Feiticeiro de grau 1 e membro da Jujutsu Society.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Atsuya_Kusakabe",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb8.png",
+    "tags": ["feiticeiro", "grau 1"]
+  },
+  {
+    "nome": "Shoko Ieiri",
+    "descricao": "Médica da Escola Jujutsu de Tóquio com técnica de cura reversa.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Shoko_Ieiri",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb9.png",
+    "tags": ["médica", "cura", "Tóquio"]
+  },
+  {
+    "nome": "Masamichi Yaga",
+    "descricao": "Diretor da Escola Jujutsu de Tóquio e criador de corpos amaldiçoados.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Masamichi_Yaga",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb10.png",
+    "tags": ["diretor", "Tóquio", "corpos amaldiçoados"]
+  },
+  {
+    "nome": "Kiyotaka Ijichi",
+    "descricao": "Gerente da Escola Jujutsu de Tóquio.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Kiyotaka_Ijichi",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb11.png",
+    "tags": ["gerente", "Tóquio"]
+  },
+  {
+    "nome": "Akari Nitta",
+    "descricao": "Funcionária da Jujutsu Society responsável pelo suporte administrativo.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Akari_Nitta",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb12.png",
+    "tags": ["administração", "Jujutsu Society"]
+  },
+  {
+    "nome": "Yuta Okkotsu",
+    "descricao": "Protagonista do prelúdio Jujutsu Kaisen 0, portador de uma maldição poderosa ligada a Rika.",
+    "data_criacao": "2017",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Yuta_Okkotsu",
+    "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb13.png",
+    "tags": ["grau especial", "Rika", "maldição"]
+  },
+  {
+    "nome": "Aoi Todo",
+    "descricao": "Feiticeiro de Kyoto com técnica Boogie Woogie, famoso por sua força e carisma.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Aoi_Todo?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb1.png",
+    "tags": ["Kyoto", "Boogie Woogie", "feiticeiro"]
+  },
+  {
+    "nome": "Noritoshi Kamo",
+    "descricao": "Estudante de Kyoto descendente do clã Kamo.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Noritoshi_Kamo?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb2.png",
+    "tags": ["Kyoto", "clã Kamo"]
+  },
+  {
+    "nome": "Momo Nishimiya",
+    "descricao": "Estudante de Kyoto com habilidade de manipulação de pássaros.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Momo_Nishimiya?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb3.png",
+    "tags": ["Kyoto", "estudante"]
+  },
+  {
+    "nome": "Mai Zenin",
+    "descricao": "Estudante de Kyoto, irmã gêmea de Maki, do clã Zenin.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Mai_Zenin?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb4.png",
+    "tags": ["Kyoto", "clã Zenin", "irmã de Maki"]
+  },
+  {
+    "nome": "Kasumi Miwa",
+    "descricao": "Estudante de Kyoto com estilo de espada tradicional.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Kasumi_Miwa?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb5.png",
+    "tags": ["Kyoto", "espada"]
+  },
+  {
+    "nome": "Kokichi Muta (Mechamaru)",
+    "descricao": "Estudante de Kyoto que pilota um corpo mecânico criado por técnica amaldiçoada.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Ultimate_Mechamaru",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb6.png",
+    "tags": ["Kyoto", "mecânico", "corpo artificial"]
+  },
+  {
+    "nome": "Kokichi Muta",
+    "descricao": "Verdadeira forma de Mechamaru, estudante de Kyoto.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Kokichi_Muta",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb7.png",
+    "tags": ["Kyoto", "estudante"]
+  },
+  {
+    "nome": "Arata Nitta",
+    "descricao": "Membro administrativo da Jujutsu Society.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Arata_Nitta?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb10.png",
+    "tags": ["administração", "Jujutsu Society"]
+  },
+  {
+    "nome": "Utahime Iori",
+    "descricao": "Professora da Escola Jujutsu de Kyoto.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Utahime_Iori",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb8.png",
+    "tags": ["professora", "Kyoto"]
+  },
+  {
+    "nome": "Yoshinobu Gakuganji",
+    "descricao": "Diretor da Escola Jujutsu de Kyoto.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Yoshinobu_Gakuganji?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb9.png",
+    "tags": ["diretor", "Kyoto"]
+  },
+  {
+    "nome": "Jogo",
+    "descricao": "Maldição de grau especial com poder de manipulação de fogo.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Jogo",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb3.png",
+    "tags": ["maldição", "antagonista", "fogo"]
+  },
+  {
+    "nome": "Hanami",
+    "descricao": "Maldição de grau especial com manipulação de plantas.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Hanami?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb4.png",
+    "tags": ["maldição", "antagonista", "plantas"]
+  },
+  {
+    "nome": "Dagon",
+    "descricao": "Maldição de grau especial com poder sobre água.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Dagon",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb21.png",
+    "tags": ["maldição", "antagonista", "água"]
+  },
+  {
+    "nome": "Mahito",
+    "descricao": "Maldição transfiguradora com habilidade de modificar formas.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Mahito",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb2.png",
+    "tags": ["maldição", "antagonista", "transfiguração"]
+  },
+  {
+    "nome": "Toji Zenin",
+    "descricao": "Assassina de maldições do clã Zenin com força excepcional sem energia amaldiçoada.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Toji_Zenin",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb22.png",
+    "tags": ["clã Zenin", "assassina", "antagonista"]
+  },
+  {
+    "nome": "Suguru Geto",
+    "descricao": "Ex-colega de Gojo, usuário de manipulação de maldições e antagonista central.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Suguru_Geto",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb6.png",
+    "tags": ["antagonista", "maldições", "feiticeiro"]
+  },
+  {
+    "nome": "Kechizu",
+    "descricao": "Irmão gêmeo de Yuji com habilidade amaldiçoada.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Kechizu?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb8.png",
+    "tags": ["maldição", "antagonista"]
+  },
+  {
+    "nome": "Ko (Cursed Womb: Death Paintings)",
+    "descricao": "Maldição com características humanas e habilidades combativas.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Ko-Guy?so=search",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb15.png",
+    "tags": ["maldição", "antagonista"]
+  }
+]
