@@ -1,38 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* Fonte estilo máquina de escrever/arquivo */
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap'); /* Fonte estilo Anime */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap'); /* Nova fonte para código/tags */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
+/* ====== VARIÁVEIS CSS ====== */
 :root {
+    /* Cores Temáticas */
     --gojo-blue: #00ffff;
     --gojo-purple: #bd00ff;
     --sukuna-red: #ff003c;
     --text-color: #f0f0f0;
+    --text-secondary: #aaa;
     --bg-dark: #050505;
     --card-bg: #121212;
     --card-border: #333;
+    --bg-hover: #1a1a1a;
+    
+    /* Efeitos Glow */
     --cursed-energy-glow: 0 0 15px rgba(0, 255, 255, 0.5);
     --sukuna-glow: 0 0 15px rgba(255, 0, 60, 0.5);
+    --strong-glow: 0 0 30px;
+    
+    /* Transições */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-smooth: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* Espaçamento */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 2.5rem;
+    
+    /* Tamanhos de Fonte */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.9rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 2.5rem;
+    --font-size-4xl: 3.5rem;
 }
 
+/* ====== RESET E BASE ====== */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
-    margin: 0;
     background-color: var(--bg-dark);
-    /* Adiciona uma textura de granulação estilo "filme antigo" ou "manga" */
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), url("https://www.transparenttextures.com/patterns/stardust.png");
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.95)), 
+                      url("https://www.transparenttextures.com/patterns/stardust.png");
     color: var(--text-color);
     font-family: "Quicksand", sans-serif;
     overflow-x: hidden;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* --- HEADER --- */
+/* ====== HEADER ====== */
 header {
-    padding: 1.5rem 2rem;
+    padding: clamp(1rem, 4vw, 1.5rem) clamp(1rem, 5vw, 2rem);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,20 +78,24 @@ header {
     background: rgba(5, 5, 5, 0.95);
     backdrop-filter: blur(10px);
     z-index: 100;
-    border-bottom: 3px solid var(--sukuna-red); /* Borda mais forte e temática */
+    border-bottom: 3px solid var(--sukuna-red);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    flex: 0 0 auto;
 }
 
 .logo {
-    height: 60px;
-    filter: invert(1) drop-shadow(0 0 8px var(--gojo-blue)); /* Brilho azul no logo */
-    transition: transform 0.3s;
+    height: clamp(40px, 10vw, 60px);
+    filter: invert(1) drop-shadow(0 0 8px var(--gojo-blue));
+    transition: transform var(--transition-normal);
+    will-change: transform;
 }
 
 .logo:hover {
@@ -64,32 +105,42 @@ header {
 
 header h1 {
     font-family: 'Teko', sans-serif;
-    font-size: 3.5rem; /* Aumentado */
-    margin: 0;
+    font-size: clamp(1.5rem, 8vw, 3.5rem);
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: clamp(1px, 1vw, 3px);
     background: linear-gradient(45deg, var(--text-color), var(--gojo-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: fit-content;
 }
 
-/* --- BUSCA --- */
+/* ====== SEARCHBOX ====== */
 .search-box {
     display: flex;
-    gap: 10px;
+    gap: clamp(0.5rem, 2vw, 1rem);
+    flex: 1 1 100%;
+    width: 100%;
 }
 
 .search-box input {
-    padding: 0.8rem 1.2rem;
-    border-radius: 0; /* Mais quadrado */
+    flex: 1;
+    min-width: 150px;
+    padding: clamp(0.6rem, 2vw, 0.8rem) clamp(0.8rem, 2vw, 1.2rem);
+    border-radius: 0;
     border: 2px solid var(--card-border);
     background: rgba(255, 255, 255, 0.03);
-    font-family: 'Roboto Mono', monospace; /* Fonte mais técnica */
-    font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     color: white;
-    width: 25rem;
-    transition: 0.3s;
+    transition: var(--transition-normal);
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .search-box input:focus {
@@ -100,19 +151,20 @@ header h1 {
 }
 
 #botao-busca {
-    padding: 0.8rem 2rem;
+    padding: clamp(0.6rem, 2vw, 0.8rem) clamp(1.2rem, 3vw, 2rem);
     border-radius: 0;
     border: none;
     cursor: pointer;
     font-family: 'Teko', sans-serif;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     font-weight: 700;
     text-transform: uppercase;
     background: var(--sukuna-red);
     color: white;
     letter-spacing: 1px;
-    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%); /* Formato recortado mais agressivo */
-    transition: 0.3s;
+    clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+    transition: var(--transition-normal);
+    white-space: nowrap;
 }
 
 #botao-busca:hover {
@@ -121,37 +173,46 @@ header h1 {
     transform: scale(1.05);
 }
 
-/* --- MAIN --- */
+#botao-busca:active {
+    transform: scale(0.98);
+}
+
+/* ====== MAIN ====== */
 main {
     max-width: 1400px;
-    margin: 2rem auto;
-    padding-bottom: 4rem;
+    margin: clamp(1rem, 5vw, 2rem) auto;
+    padding: 0 clamp(0.5rem, 3vw, 1.5rem);
+    padding-bottom: clamp(2rem, 5vw, 4rem);
     min-height: 80vh;
 }
 
+/* ====== CARD CONTAINER ====== */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cards um pouco maiores */
-    gap: 2.5rem; /* Espaçamento maior */
-    padding: 0 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: clamp(1.5rem, 4vw, 2.5rem);
+    padding: 0;
 }
 
-/* --- CARDS ESTILO JUJUTSU --- */
+/* ====== CARDS ESTILO JUJUTSU ====== */
 article.card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 0; /* Mais quadrado */
+    border-radius: 0;
     overflow: hidden;
     position: relative;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all var(--transition-smooth);
     box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-/* Efeito de hover "Energia Amaldiçoada" */
 article.card:hover {
     transform: translateY(-8px) scale(1.02);
     border-color: var(--gojo-blue);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), inset 0 0 20px rgba(0,0,0,0.9);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6), 
+                inset 0 0 20px rgba(0,0,0,0.9);
 }
 
 article.card:hover h2 {
@@ -159,91 +220,99 @@ article.card:hover h2 {
     text-shadow: 0 0 10px var(--gojo-blue);
 }
 
+/* ====== CARD IMAGE ====== */
 .card-cover {
     width: 100%;
-    height: 300px; /* Imagem maior */
+    height: clamp(200px, 50vw, 300px);
     object-fit: cover;
     object-position: top;
-    border-bottom: 5px solid var(--sukuna-red); /* Linha vermelha mais grossa */
+    border-bottom: 5px solid var(--sukuna-red);
     filter: grayscale(40%) contrast(110%);
-    transition: 0.4s;
+    transition: filter var(--transition-normal);
 }
 
 article.card:hover .card-cover {
     filter: grayscale(0%) contrast(120%);
 }
 
+/* ====== CARD CONTENT ====== */
 .card-content {
-    padding: 1.5rem;
+    padding: clamp(1rem, 3vw, 1.5rem);
     position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Títulos dos Cards */
 article h2 {
     font-family: 'Teko', sans-serif;
-    font-size: 2.5rem; /* Título maior */
-    margin: 0 0 0.5rem 0;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     line-height: 0.9;
     text-transform: uppercase;
     color: white;
-    transition: 0.3s;
+    transition: var(--transition-normal);
+    margin-bottom: clamp(0.3rem, 2vw, 0.5rem);
+    word-break: break-word;
 }
 
 article p {
-    font-size: 1rem;
-    color: #aaa;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    color: var(--text-secondary);
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: clamp(0.5rem, 2vw, 1rem);
 }
 
 article p strong {
     color: var(--sukuna-red);
-    font-family: 'Roboto Mono', monospace; /* Fonte mais técnica */
+    font-family: 'Roboto Mono', monospace;
     font-weight: 700;
 }
 
-/* --- TAGS --- */
+/* ====== TAGS ====== */
 .card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    border-top: 1px solid #333;
-    padding-top: 1rem;
+    gap: clamp(0.3rem, 2vw, 0.5rem);
+    margin-top: auto;
+    border-top: 1px solid var(--card-border);
+    padding-top: clamp(0.5rem, 2vw, 1rem);
 }
 
 .tag {
-    font-size: 0.75rem;
+    font-size: clamp(0.65rem, 1.5vw, 0.75rem);
     text-transform: uppercase;
-    padding: 0.3rem 0.7rem;
+    padding: clamp(0.2rem, 1vw, 0.3rem) clamp(0.4rem, 1.5vw, 0.7rem);
     background: rgba(255, 255, 255, 0.05);
-    color: var(--gojo-blue); /* Cor da tag */
+    color: var(--gojo-blue);
     border: 1px solid var(--gojo-blue);
     font-family: 'Roboto Mono', monospace;
-    letter-spacing: 1px;
-    transition: 0.3s;
+    letter-spacing: 0.5px;
+    transition: var(--transition-fast);
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tag:hover {
     background: var(--gojo-blue);
     color: var(--bg-dark);
-    cursor: default;
 }
 
-/* Link estilo botão */
+/* ====== LINK BOTÃO ====== */
 article a {
     display: block;
-    margin-top: 1.5rem;
+    margin-top: auto;
     text-align: center;
     background: transparent;
-    border: 2px solid var(--sukuna-red); /* Borda mais grossa e vermelha */
+    border: 2px solid var(--sukuna-red);
     color: var(--sukuna-red);
-    padding: 0.7rem;
+    padding: clamp(0.5rem, 2vw, 0.7rem);
     text-decoration: none;
     font-family: 'Teko', sans-serif;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     text-transform: uppercase;
-    transition: 0.3s;
+    transition: var(--transition-normal);
     letter-spacing: 1px;
 }
 
@@ -253,16 +322,22 @@ article a:hover {
     box-shadow: 0 0 15px var(--sukuna-red);
 }
 
-/* --- LOADER (Orbe de Energia) --- */
+article a:active {
+    transform: scale(0.98);
+}
+
+/* ====== LOADER ====== */
 .loader-container {
     display: none;
     justify-content: center;
-    padding-top: 5rem;
+    align-items: center;
+    padding: clamp(2rem, 10vw, 5rem);
+    min-height: 400px;
 }
 
 .loader {
-    width: 80px; /* Loader maior */
-    height: 80px;
+    width: clamp(60px, 15vw, 80px);
+    height: clamp(60px, 15vw, 80px);
     border-radius: 50%;
     background: radial-gradient(circle at 30% 30%, var(--gojo-blue), transparent);
     box-shadow: 0 0 25px var(--gojo-blue), 0 0 50px var(--gojo-purple);
@@ -270,35 +345,64 @@ article a:hover {
 }
 
 @keyframes pulseCurse {
-    from { transform: scale(1); opacity: 0.8; }
-    to { transform: scale(1.2); opacity: 1; box-shadow: 0 0 40px var(--gojo-blue), 0 0 80px var(--gojo-purple); }
+    from {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 1;
+        box-shadow: 0 0 40px var(--gojo-blue), 0 0 80px var(--gojo-purple);
+    }
 }
 
-/* --- MENSAGEM DE ERRO --- */
+/* ====== MENSAGEM DE ERRO ====== */
+#msg-erro {
+    text-align: center;
+    padding: clamp(2rem, 5vw, 4rem);
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #msg-erro h2 {
     font-family: 'Teko', sans-serif;
-    font-size: 2.5rem !important;
-    color: #888 !important;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    color: #888;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     letter-spacing: 2px;
 }
 
-/* --- FOOTER --- */
+/* ====== FOOTER ====== */
 .footer {
     border-top: 1px solid #1a1a1a;
-    padding: 1rem 0;
+    padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 1.5rem);
     text-align: center;
+    margin-top: clamp(2rem, 5vw, 4rem);
 }
 
 .footer p {
-    color: #555 !important;
-    font-size: 0.9rem !important;
+    color: #555;
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
     font-family: 'Quicksand', sans-serif;
-    margin: 0;
 }
 
-/* --- RESPONSIVIDADE --- */
-@media (max-width: 1024px) {
+/* ====== RESPONSIVIDADE ====== */
+
+/* Extra Large Screens (1400px+) */
+@media (min-width: 1400px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large Screens (1024px - 1399px) */
+@media (max-width: 1399px) and (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     header {
         padding: 1rem 1.5rem;
     }
@@ -306,20 +410,114 @@ article a:hover {
     header h1 {
         font-size: 2.5rem;
     }
-    
-    .logo {
-        height: 50px;
+}
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
     }
     
-    .search-box input {
-        width: 18rem;
+    .search-box {
+        flex-basis: 100%;
+        order: 3;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+        flex-basis: 100%;
+        order: 1;
+    }
+    
+    .logo-container {
+        order: 2;
+    }
+    
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    article.card:hover {
+        transform: translateY(-6px) scale(1.01);
     }
 }
 
-@media (max-width: 768px) {
+/* Small Tablets (600px - 767px) */
+@media (max-width: 767px) and (min-width: 600px) {
     header {
         flex-direction: column;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+    
+    .logo-container {
+        justify-content: center;
+    }
+    
+    .search-box {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+    
+    .search-box input,
+    #botao-busca {
+        width: 100%;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
         gap: 1rem;
+        padding: 0;
+    }
+    
+    article.card {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+    
+    .card-cover {
+        height: 150px;
+        border-right: 5px solid var(--sukuna-red);
+        border-bottom: none;
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+    
+    article h2 {
+        font-size: 1.3rem;
+    }
+    
+    article p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Phones (up to 599px) */
+@media (max-width: 599px) {
+    html {
+        font-size: 14px;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem;
+        border-bottom: 2px solid var(--sukuna-red);
+    }
+    
+    .logo {
+        height: 40px;
     }
     
     .logo-container {
@@ -327,25 +525,153 @@ article a:hover {
         width: 100%;
     }
     
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
     .search-box {
+        flex-direction: column;
         width: 100%;
-        flex-direction: row;
+        gap: 0.4rem;
     }
     
     .search-box input {
+        padding: 0.6rem;
+        font-size: 1rem;
         width: 100%;
     }
     
     #botao-busca {
-        padding: 0.8rem 1.5rem;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        clip-path: polygon(5% 0, 100% 0, 100% 95%, 95% 100%, 0 100%, 0 5%);
+    }
+    
+    main {
+        padding: 0 0.5rem;
+        margin: 1rem 0;
     }
     
     .card-container {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
+        gap: 1rem;
+        padding: 0;
+    }
+    
+    article.card {
+        display: flex;
+        flex-direction: column;
     }
     
     .card-cover {
-        height: 250px;
+        height: 200px;
+        border-bottom: 4px solid var(--sukuna-red);
+    }
+    
+    .card-content {
+        padding: 1rem;
+    }
+    
+    article h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    article p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tag {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    article a {
+        font-size: 1rem;
+        padding: 0.6rem;
+        margin-top: 1rem;
+    }
+    
+    #msg-erro h2 {
+        font-size: 1.3rem;
+    }
+    
+    .footer p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Ultra Small Devices (up to 399px) */
+@media (max-width: 399px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    header h1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .search-box input {
+        font-size: 0.9rem;
+    }
+    
+    #botao-busca {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    article h2 {
+        font-size: 1rem;
+    }
+    
+    article p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ====== ANIMAÇÕES ADICIONAIS ====== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article.card {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* ====== ACESSIBILIDADE ====== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ====== TEMAS PARA USUÁRIOS COM PREFERÊNCIA ====== */
+@media (prefers-color-scheme: light) {
+    :root {
+        --gojo-blue: #0088ff;
+        --sukuna-red: #cc0022;
+        --text-color: #222;
+        --text-secondary: #555;
+        --bg-dark: #f5f5f5;
+        --card-bg: #ffffff;
+        --card-border: #ddd;
+        --bg-hover: #f0f0f0;
     }
 }
