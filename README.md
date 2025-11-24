@@ -761,46 +761,6 @@ document.getElementById("campo-pesquisa").addEventListener("keypress", function(
 // Abrem em nova aba com target="_blank"
 ```
 
-### Padrões de Código Utilizados
-
-| Padrão | Uso | Benefício |
-|--------|-----|-----------|
-| **Module Pattern** | Variáveis no escopo global reduzido | Evita poluição do escopo global |
-| **Async/Await** | Operações assíncronas | Código mais legível que Promises |
-| **Array Methods** | `map()`, `filter()`, `some()` | Código funcional e declarativo |
-| **Template Literals** | String interpolation | Strings dinâmicas legíveis |
-| **Event Delegation** | Listeners em elementos pai | Menos overhead de memória |
-| **Graceful Degradation** | Fallbacks para imagens | Robustez contra falhas |
-
-### Roadmap e Próximas Melhorias
-
-#### Curto Prazo (Próximas Sprints)
-- [ ] **Filtros Avançados**: Checkboxes para filtrar por categoria
-- [ ] **Ordenação**: Sort por nome (A-Z), data de criação, popularidade
-- [ ] **Paginação**: Mostrar 12 cards por página
-- [ ] **Favoritos/Bookmarks**: Salvar personagens favoritos (localStorage)
-- [ ] **Dark/Light Mode Toggle**: Alternar entre temas
-- [ ] **Compartilhamento Social**: Links para compartilhar personagem
-
-#### Médio Prazo
-- [ ] **Integração com API**: Conectar a API real de Jujutsu Kaisen
-- [ ] **Filtros por Tags Visuais**: UI melhorada com chips clicáveis
-- [ ] **Comparação de Personagens**: Colocar dois personagens lado a lado
-- [ ] **Galeria de Imagens**: Múltiplas imagens por personagem
-- [ ] **Página Detalhada**: Clicar no card abre página individual
-- [ ] **Suporte a Idiomas**: i18n (Português, Inglês, Japonês)
-
-#### Longo Prazo
-- [ ] **PWA (Progressive Web App)**: Instalar como app mobile
-- [ ] **Modo Offline**: Cache com Service Workers
-- [ ] **Animações Avançadas**: Transições entre páginas
-- [ ] **Backend**: Integração com banco de dados
-- [ ] **Autenticação**: Login de usuários
-- [ ] **Sistema de Avaliações**: Ratings dos personagens
-- [ ] **Fórum Integrado**: Comunidade de discussão
-
----
-
 ## 📚 Aprendizados da Imersão
 
 Este projeto foi desenvolvido durante a **Imersão Dev com Google Gemini - 10ª Edição**, oferecida pela **Alura**, consolidando conhecimentos em:
@@ -859,29 +819,11 @@ Este projeto foi desenvolvido durante a **Imersão Dev com Google Gemini - 10ª 
 
 ---
 
-## 🎓 Sobre a Alura e Imersão Dev
-
-### 🏫 Por que Alura?
-
-A **Alura** é a principal plataforma brasileira de educação em tecnologia, oferecendo:
-
-- ✅ **Cursos de Qualidade**: Conteúdo produzido por especialistas da indústria
-- ✅ **Comunidade Ativa**: Fórum com mentores e colegas
-- ✅ **Certificações**: Validação de conhecimento
-- ✅ **Inovação Educacional**: Primeiros a trazer IA à educação com Gemini
-- ✅ **Acessibilidade**: Preços competitivos e acesso democrático
-- ✅ **Atualização Constante**: Novos cursos acompanhando tendências
+## 🎓 Sobre a Imersão Dev da Alura
 
 ### 🤖 Imersão Dev com Google Gemini - 10ª Edição
 
 A **Imersão Dev com Google Gemini** é um programa intensivo que oferece:
-
-#### O que é?
-- **Intensivo de 5 dias**: Desenvolvimento de projetos práticos
-- **Com IA Integrada**: Google Gemini como assistente
-- **Mentorias ao Vivo**: Especialistas disponíveis
-- **Projetos Reais**: Portfólio pronto para mercado
-- **Comunidade**: Networking com outros desenvolvedores
 
 #### Diferenciais
 - 🤖 **Primeiro Programa com Gemini**: Utilização de IA no processo educacional
@@ -1037,7 +979,6 @@ git push origin feature/nova-funcionalidade
 - Código sem testes
 - Dependências desnecessárias
 - Formatação inconsistente
-- Commits mensagens vagas como "fix" ou "update"
 
 #### 🎯 Checklist de PR
 - [ ] Código segue o estilo do projeto
