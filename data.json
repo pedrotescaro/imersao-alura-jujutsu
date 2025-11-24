@@ -5,7 +5,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Sukuna?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb99.png",
-    "tags": ["maldição", "antagonista", "Sukuna"]
+    "tags": ["maldição", "antagonista", "Sukuna", "especial", "destruição", "imortal"]
   },
   {
     "nome": "Yuji Itadori",
@@ -13,7 +13,7 @@
     "data_criacao": "2018",
     "link": "https://en.wikipedia.org/wiki/Yuji_Itadori",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb1.png",
-    "tags": ["estudante", "Tóquio", "protagonista"]
+    "tags": ["estudante", "Tóquio", "protagonista", "grau 2", "hostilidade"]
   },
   {
     "nome": "Megumi Fushiguro",
@@ -21,7 +21,7 @@
     "data_criacao": "2018",
     "link": "https://en.wikipedia.org/wiki/Megumi_Fushiguro",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb2.png",
-    "tags": ["estudante", "Tóquio", "técnica das sombras"]
+    "tags": ["estudante", "Tóquio", "técnica das sombras", "sombras", "grau 2"]
   },
   {
     "nome": "Nobara Kugisaki",
@@ -29,7 +29,7 @@
     "data_criacao": "2018",
     "link": "https://en.wikipedia.org/wiki/Nobara_Kugisaki",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb3.png",
-    "tags": ["estudante", "Tóquio", "armas"]
+    "tags": ["estudante", "Tóquio", "armas", "martelo", "grau 3"]
   },
   {
     "nome": "Maki Zen'in",
@@ -37,7 +37,7 @@
     "data_criacao": "2018",
     "link": "https://en.wikipedia.org/wiki/Maki_Zen%27in",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb4.png",
-    "tags": ["clã Zen'in", "armas", "Tóquio"]
+    "tags": ["clã Zen'in", "armas", "Tóquio", "força", "grau 1"]
   },
   {
     "nome": "Toge Inumaki",
@@ -45,7 +45,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Toge_Inumaki",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb5.png",
-    "tags": ["Fala Amaldiçoada", "estudante", "Tóquio"]
+    "tags": ["Fala Amaldiçoada", "estudante", "Tóquio", "fala", "grau 3"]
   },
   {
     "nome": "Panda",
@@ -53,7 +53,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Panda",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb6.png",
-    "tags": ["corpo amaldiçoado", "especial", "Tóquio"]
+    "tags": ["corpo amaldiçoado", "especial", "Tóquio", "proteção", "força"]
   },
   {
     "nome": "Satoru Gojo",
@@ -61,7 +61,7 @@
     "data_criacao": "2018",
     "link": "https://en.wikipedia.org/wiki/Satoru_Gojo",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb7.png",
-    "tags": ["feiticeiro", "professor", "Tóquio"]
+    "tags": ["feiticeiro", "professor", "Tóquio", "Maldição Infinita", "especial"]
   },
   {
     "nome": "Atsuya Kusakabe",
@@ -69,7 +69,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Atsuya_Kusakabe",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb8.png",
-    "tags": ["feiticeiro", "grau 1"]
+    "tags": ["feiticeiro", "grau 1", "força", "experiência"]
   },
   {
     "nome": "Shoko Ieiri",
@@ -77,7 +77,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Shoko_Ieiri",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb9.png",
-    "tags": ["médica", "cura", "Tóquio"]
+    "tags": ["médica", "cura", "Tóquio", "suporte", "reversa"]
   },
   {
     "nome": "Masamichi Yaga",
@@ -85,7 +85,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Masamichi_Yaga",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb10.png",
-    "tags": ["diretor", "Tóquio", "corpos amaldiçoados"]
+    "tags": ["diretor", "Tóquio", "corpos amaldiçoados", "criação", "grau 1"]
   },
   {
     "nome": "Kiyotaka Ijichi",
@@ -93,7 +93,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Kiyotaka_Ijichi",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb11.png",
-    "tags": ["gerente", "Tóquio"]
+    "tags": ["gerente", "Tóquio", "suporte", "administração"]
   },
   {
     "nome": "Akari Nitta",
@@ -101,7 +101,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Akari_Nitta",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb12.png",
-    "tags": ["administração", "Jujutsu Society"]
+    "tags": ["administração", "Jujutsu Society", "suporte"]
   },
   {
     "nome": "Yuta Okkotsu",
@@ -109,7 +109,7 @@
     "data_criacao": "2017",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Yuta_Okkotsu",
     "icon": "https://jujutsukaisen.jp/images/chara_category1/chara_thumb13.png",
-    "tags": ["grau especial", "Rika", "maldição"]
+    "tags": ["grau especial", "Rika", "maldição", "feiticeiro", "poder"]
   },
   {
     "nome": "Aoi Todo",
@@ -117,7 +117,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Aoi_Todo?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb1.png",
-    "tags": ["Kyoto", "Boogie Woogie", "feiticeiro"]
+    "tags": ["Kyoto", "Boogie Woogie", "feiticeiro", "força", "grau 1"]
   },
   {
     "nome": "Noritoshi Kamo",
@@ -125,7 +125,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Noritoshi_Kamo?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb2.png",
-    "tags": ["Kyoto", "clã Kamo"]
+    "tags": ["Kyoto", "clã Kamo", "sangue", "estudante", "grau 2"]
   },
   {
     "nome": "Momo Nishimiya",
@@ -133,7 +133,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Momo_Nishimiya?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb3.png",
-    "tags": ["Kyoto", "estudante"]
+    "tags": ["Kyoto", "estudante", "pássaros", "voo", "grau 3"]
   },
   {
     "nome": "Mai Zenin",
@@ -141,7 +141,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Mai_Zenin?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb4.png",
-    "tags": ["Kyoto", "clã Zenin", "irmã de Maki"]
+    "tags": ["Kyoto", "clã Zenin", "irmã de Maki", "armas", "grau 2"]
   },
   {
     "nome": "Kasumi Miwa",
@@ -149,7 +149,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Kasumi_Miwa?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb5.png",
-    "tags": ["Kyoto", "espada"]
+    "tags": ["Kyoto", "espada", "armas", "estudante", "grau 3"]
   },
   {
     "nome": "Kokichi Muta (Mechamaru)",
@@ -157,7 +157,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Ultimate_Mechamaru",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb6.png",
-    "tags": ["Kyoto", "mecânico", "corpo artificial"]
+    "tags": ["Kyoto", "mecânico", "corpo artificial", "tecnologia", "grau especial"]
   },
   {
     "nome": "Kokichi Muta",
@@ -165,7 +165,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Kokichi_Muta",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb7.png",
-    "tags": ["Kyoto", "estudante"]
+    "tags": ["Kyoto", "estudante", "hacker", "técnica", "grau 2"]
   },
   {
     "nome": "Arata Nitta",
@@ -173,7 +173,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Arata_Nitta?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb10.png",
-    "tags": ["administração", "Jujutsu Society"]
+    "tags": ["administração", "Jujutsu Society", "suporte"]
   },
   {
     "nome": "Utahime Iori",
@@ -181,7 +181,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Utahime_Iori",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb8.png",
-    "tags": ["professora", "Kyoto"]
+    "tags": ["professora", "Kyoto", "suporte", "experiência"]
   },
   {
     "nome": "Yoshinobu Gakuganji",
@@ -189,7 +189,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Yoshinobu_Gakuganji?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category2/chara_thumb9.png",
-    "tags": ["diretor", "Kyoto"]
+    "tags": ["diretor", "Kyoto", "experiência", "grau 1"]
   },
   {
     "nome": "Jogo",
@@ -197,7 +197,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Jogo",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb3.png",
-    "tags": ["maldição", "antagonista", "fogo"]
+    "tags": ["maldição", "antagonista", "fogo", "especial", "destruição"]
   },
   {
     "nome": "Hanami",
@@ -205,7 +205,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Hanami?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb4.png",
-    "tags": ["maldição", "antagonista", "plantas"]
+    "tags": ["maldição", "antagonista", "plantas", "especial", "natureza"]
   },
   {
     "nome": "Dagon",
@@ -213,7 +213,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Dagon",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb21.png",
-    "tags": ["maldição", "antagonista", "água"]
+    "tags": ["maldição", "antagonista", "água", "especial", "domínio"]
   },
   {
     "nome": "Mahito",
@@ -221,7 +221,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Mahito",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb2.png",
-    "tags": ["maldição", "antagonista", "transfiguração"]
+    "tags": ["maldição", "antagonista", "transfiguração", "especializado", "corpo"]
   },
   {
     "nome": "Toji Zenin",
@@ -229,15 +229,23 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Toji_Zenin",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb22.png",
-    "tags": ["clã Zenin", "assassina", "antagonista"]
+    "tags": ["clã Zenin", "assassina", "antagonista", "força", "grau 1"]
   },
   {
     "nome": "Suguru Geto",
     "descricao": "Ex-colega de Gojo, usuário de manipulação de maldições e antagonista central.",
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Suguru_Geto",
+    "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb1.png",
+    "tags": ["antagonista", "maldições", "feiticeiro", "manipulação", "especial"]
+  },
+  {
+    "nome": "Choso",
+    "descricao": "Um dos irmãos gêmeos da série Death Paintings com poder sobre sangue.",
+    "data_criacao": "2018",
+    "link": "https://jujutsu-kaisen.fandom.com/wiki/Choso",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb6.png",
-    "tags": ["antagonista", "maldições", "feiticeiro"]
+    "tags": ["maldição", "antagonista", "sangue", "Death Paintings", "especial"]
   },
   {
     "nome": "Kechizu",
@@ -245,7 +253,7 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Kechizu?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb8.png",
-    "tags": ["maldição", "antagonista"]
+    "tags": ["maldição", "antagonista", "veneno", "irmão de Yuji"]
   },
   {
     "nome": "Ko (Cursed Womb: Death Paintings)",
@@ -253,6 +261,6 @@
     "data_criacao": "2018",
     "link": "https://jujutsu-kaisen.fandom.com/wiki/Ko-Guy?so=search",
     "icon": "https://jujutsukaisen.jp/images/chara_category4/chara_thumb15.png",
-    "tags": ["maldição", "antagonista"]
+    "tags": ["maldição", "antagonista", "humanóide", "força"]
   }
 ]

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Jujutsu_Kaisen_logo.svg" type="image/svg+xml">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Jujutsu Kaisen | Arquivos Jujutsu</title>
 </head>
 <body>
@@ -15,9 +17,15 @@
         <img src="imgs/Jujutsu-Kaisen-Logo.png" alt="Jujutsu Logo" class="logo">
         <h1>Arquivos Jujutsu</h1>
     </div>
-    <div class="search-box">
-        <input type="text" id="campo-pesquisa" placeholder="Pesquisar feiticeiro ou maldição...">
-        <button id="botao-busca" onclick="iniciarBusca()">Investigar</button>
+    <div class="header-controls">
+        <div class="search-box">
+            <input type="text" id="campo-pesquisa" placeholder="Pesquisar feiticeiro ou maldição...">
+            <button id="botao-busca" onclick="iniciarBusca()" title="Investigar"><i class="fas fa-search"></i> Investigar</button>
+        </div>
+        <div class="header-buttons">
+                <button id="btn-tema" class="theme-toggle" title="Alternar Tema"><i class="fas fa-moon"></i></button>
+                <button id="btn-favoritos" class="favorites-btn" title="Ver Favoritos"><i class="fas fa-heart"></i></button>
+        </div>
     </div>
    </header> 
     
@@ -25,19 +33,31 @@
         <div class="loader-container">
             <div class="loader"></div>
         </div>
+
+        <!-- Informações de Paginação -->
+        <div class="pagination-info" id="pagination-info" style="display: none;">
+            <span id="pagination-text"></span>
+        </div>
+
+        <!-- Container de Cards -->
+        <section class="card-container" id="card-container"></section>
         
-        <section class="card-container" id="card-container">
-            </section>
-        
+        <!-- Mensagem de Erro -->
         <div id="msg-erro" style="display:none; text-align:center; margin-top: 2rem;">
-            <h2 style="font-family: 'Teko'; font-size: 2rem; color: #555;">Nenhum rastro de energia amaldiçoada encontrado...</h2>
+            <h2 style="font-family: 'Teko'; font-size: 2rem; color: #555;"><i class="fas fa-search"></i> Nenhum rastro de energia amaldiçoada encontrado...</h2>
+        </div>
+
+        <!-- Paginação -->
+        <div class="pagination" id="pagination" style="display: none;">
+            <button id="btn-anterior" class="btn-pagination"><i class="fas fa-chevron-left"></i> Anterior</button>
+            <div class="pagination-numbers" id="pagination-numbers"></div>
+            <button id="btn-proximo" class="btn-pagination">Próximo <i class="fas fa-chevron-right"></i></button>
         </div>
     </main>    
 
     <footer class="footer">
         <p style="text-align: center; color: #555; font-size: 0.8rem; padding: 2rem;">
-            Desenvolvido por Pedro Tescaro | Dados da wiki de jujutsu kaisen<br>
-            Imagens retiradas de sites oficiais e da wiki de jujutsu kaisen
+            Desenvolvido com Pedro Tescaro| Dados tirados do Jujutsu Kaisen Fandom | &copy; 2024
         </p>
     </footer>
     <script src="script.js"></script>
